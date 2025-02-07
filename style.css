@@ -46,9 +46,10 @@ img {
 
 /* text style */
 
-h2 {
+.large-paragraph {
     color: var(--primary-color-four);
     margin-block: 1rem;
+    font-size: 1.2rem;
 }
 
 .user-name {
@@ -207,7 +208,7 @@ img {
 @media (min-width: 950px) {
 
     .wrapper {
-        max-width: 1110px;
+        max-width: 1150px;
         display: grid;
         place-content: center;
         min-height: 100vh;
@@ -255,7 +256,7 @@ img {
 
     .daniel-paragraph {
         margin-top: 1rem;
-        margin-right: .5rem;
+        margin-right: .2rem;
         
         
     }
@@ -267,11 +268,15 @@ img {
     }
 
     .dark {
-        margin-right: .1rem;
+        margin-right: .4rem;
     }
 
     .first { 
         background-position: 345px 0px;
+    }
+
+    .daniel {
+        margin-right: .2rem;
     }
     
 

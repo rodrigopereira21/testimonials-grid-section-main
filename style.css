@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root {
+    --primary-color-one: hsl(263, 55%, 52%);
+    --primary-color-two: hsl(217, 19%, 35%);
+    --primary-color-three: hsl(219, 29%, 14%);
+    --primary-color-four: hsl(0, 0%, 100%);
+    --primary-color-four-50-opacity:hsla(0, 0%, 100%, 0.5);
+    --primary-color-four-70-opacity: hsla(0, 0%, 100%, 0.5);
+
+    --teste: #AEB5BD;
+    --teste2: #929AA6;
+
+    --neutral-color-one: hsl(0, 0%, 81%);
+    --neutral-color-two: hsl(210, 46%, 95%);
+
+    --ff: 'Barlow Semi Condensed', sans-serif;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fs-body: 0.813rem;
+}
+
+/*reset*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--neutral-color-two);
+    font-family: var(--ff);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-500);
+    color: var(--primary-color-four-70-opacity);
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* text style */
+
+h2 {
+    color: var(--primary-color-four);
+    margin-block: 1rem;
+}
+
+.user-name {
+    color: var(--primary-color-four);
+}
+
+/* layout */
+.wrapper {
+    min-width: 23.438rem;
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    
+}
+
+.layout-grid {
+    display: grid;
+    gap: 1.875rem;
+    margin-inline: 1.5rem;
+    margin-block: 4.438rem;
+    
+
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    ;
+    
+}
+
+.card:nth-child(1) {
+    grid-area: one;
+    
+}
+
+.card:nth-child(2) {
+    grid-area: two;
+
+}
+
+.card:nth-child(3) {
+    grid-area: three;
+}
+
+.card:nth-child(4) {
+    grid-area: four;
+}
+
+.card:nth-child(5) {
+    grid-area: five;
+
+}
+
+.card {
+    background: var(--primary-color-one);
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    max-width: 20.438rem;
+    
+    
+}
+
+
+
+.daniel-paragraph {
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    
+}
+
+.user-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.user-info {
+    flex-direction: column;
+    
+}
+
+/* general style */
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+
+}
+
+.daniel-icon {
+    border: 2.5px solid #A775F1;
+}
+
+.patrick-icon {
+    border: 2.5px solid #733FC8;
+}
+
+
+.user-name {
+    font-size: 0.813rem;
+    font-weight: var(--fw-500);
+}
+
+.verified {
+    font-size: 0.688rem;
+    color: var(--primary-color-four-50-opacity);
+}
+
+.first {
+    
+    background: url(images/bg-pattern-quotation.svg);
+    background-position: 195px 0px;
+    background-size: 103px 115px;
+    background-color: #733FC8;
+    background-repeat: no-repeat;
+    
+}
+
+.second {
+    background: var(--primary-color-two);
+}
+
+.third, .fifth {
+    background: var(--primary-color-four);
+    color: #7F8897;
+    font-weight: var(--fw-500);
+    box-shadow: 5px 10px 20px #D4DBE3;
+}
+
+.fourth {
+    background: var(--primary-color-three);
+}
+
+.dark{
+    color: var(--primary-color-three);
+}
+
+.gray {
+    color: #AEB5BD;
+}
+
+.large-text {
+    margin-right: .1rem;
+}
+
+
+
+@media (min-width: 950px) {
+
+    .wrapper {
+        max-width: 1110px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+
+
+  
+
+    .card:nth-child(1) {
+        grid-area: one;
+        max-width: 33.75rem;
+        
+    }
+    
+    .card:nth-child(2) {
+        grid-area: two;
+        max-width: 15.938rem;
+    }
+    
+    .card:nth-child(3) {
+        grid-area: three;
+        width: 15.938rem;
+    }
+    
+    .card:nth-child(4) {
+        grid-area: four;
+        max-width: 33.75rem;
+    }
+    
+    .card:nth-child(5) {
+        grid-area: five;
+        max-width: 15.938rem;
+    }
+
+    .layout-grid {
+        
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'
+        ;
+    }
+
+    .daniel-paragraph {
+        margin-top: 1rem;
+        margin-right: .5rem;
+        
+        
+    }
+
+    .jeanette-paragraph {
+        margin-top: 2rem;
+        
+        
+    }
+
+    .dark {
+        margin-right: .1rem;
+    }
+
+    .first { 
+        background-position: 345px 0px;
+    }
+    
+
+    
+}
+

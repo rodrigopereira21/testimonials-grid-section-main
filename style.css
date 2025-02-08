@@ -74,6 +74,7 @@ img {
 
 /* layout */
 .wrapper {
+    
     min-width: 23.438rem;
     margin-inline: auto;
     display: grid;
@@ -127,7 +128,7 @@ img {
     background: var(--primary-color-one);
     padding: 1.5rem 2rem;
     border-radius: .5rem;
-    max-width: 20.438rem;
+    
     
     
 }
@@ -180,13 +181,23 @@ img {
 
 .first {
     
+    background-color: #733FC8;
+    
+    
+}
+
+.first {
+    
     background: url(images/bg-pattern-quotation.svg);
-    background-position: 195px 0px;
-    background-size: 103px 115px;
+    background-position: 85% 0;
+    
+    background-size: 103px 110px;
     background-color: #733FC8;
     background-repeat: no-repeat;
     
 }
+
+
 
 .second {
     background: var(--primary-color-two);
@@ -265,7 +276,7 @@ img {
     }
 
     .first { 
-        background-position: 345px 0px;
+        background-position: 77% 0px;
     }
 
     .daniel {

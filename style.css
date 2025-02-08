@@ -54,6 +54,22 @@ img {
 
 .user-name {
     color: var(--primary-color-four);
+    font-size: 0.813rem;
+    font-weight: var(--fw-500);
+}
+
+
+.verified {
+    font-size: 0.688rem;
+    color: var(--primary-color-four-50-opacity);
+}
+
+.dark{
+    color: var(--primary-color-three);
+}
+
+.gray {
+    color: #AEB5BD;
 }
 
 /* layout */
@@ -136,6 +152,10 @@ img {
     
 }
 
+.large-text {
+    margin-right: .1rem;
+}
+
 /* general style */
 
 img {
@@ -156,15 +176,7 @@ img {
 }
 
 
-.user-name {
-    font-size: 0.813rem;
-    font-weight: var(--fw-500);
-}
-
-.verified {
-    font-size: 0.688rem;
-    color: var(--primary-color-four-50-opacity);
-}
+/* background style cards */
 
 .first {
     
@@ -191,20 +203,6 @@ img {
     background: var(--primary-color-three);
 }
 
-.dark{
-    color: var(--primary-color-three);
-}
-
-.gray {
-    color: #AEB5BD;
-}
-
-.large-text {
-    margin-right: .1rem;
-}
-
-
-
 @media (min-width: 950px) {
 
     .wrapper {
@@ -213,9 +211,6 @@ img {
         place-content: center;
         min-height: 100vh;
     }
-
-
-  
 
     .card:nth-child(1) {
         grid-area: one;
@@ -263,8 +258,6 @@ img {
 
     .jeanette-paragraph {
         margin-top: 2rem;
-        
-        
     }
 
     .dark {
